@@ -1,0 +1,24 @@
+{
+    "name": "sebardo/api",
+    "type": "library",
+    "description": "OAuth + restuful implementation in Symfony 3",
+    "keywords": ["oauth","restful","symfony"],
+    "homepage": "https://github.com/sebardo/api",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Dario Sebastian Sasturain",
+            "email": "sebastian.sasturain@gmail.com",
+            "homepage": "http://sasturain.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "sebardo/core": "dev-master",
+        "sebardo/admin": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"ApiBundle\\": "ApiBundle"}
+    }
+}
