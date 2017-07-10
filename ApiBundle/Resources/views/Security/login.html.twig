@@ -1,0 +1,15 @@
+{% extends twig_global.getParameter('extended_layout') ? twig_global.getParameter('extended_layout') : 'CoreBundle:Base:base.layout.html.twig' %}
+
+{% block  content %}
+<div class="col-sm-4"></div>        
+<div class="col-sm-4 container-login">
+        <h2 class="center">{{ 'login.account' | trans }}</h2>
+        <hr>
+        {% if error is defined and error %}
+           <div>{{ error.message }}</div>
+        {% endif %}
+        {{ login_form({action: '/oauth/v2/auth/login_check'}) }}
+</div>
+<div class="col-sm-4"></div>               
+
+{% endblock %}
